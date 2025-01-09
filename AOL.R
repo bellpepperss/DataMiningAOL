@@ -13,7 +13,6 @@ data.fr <- na.omit(data.fr)
 # make transaction list
 transactions.fr <- split(data.fr$Itemname,data.fr$BillNo)
 transactions.UK <- split(data.UK$Itemname,data.UK$BillNo)
-inspect(transactions.fr)
 
 # make transaction list from both regions
 list_transactions.fr <- as(transactions.fr, 'transactions')
